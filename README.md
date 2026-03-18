@@ -1,44 +1,54 @@
-GESTOR DE TAREAS CON PRIORIDAD
+# Gestor de Tareas con Prioridad
 
-Descripción:
-   Con este programa vas a poder gestionar tus tareas, las cuales van a estar marcadas según la prioridad que vos les des (baja, media, alta).
-   Podés realizar las siguientes acciones:
-   * Agregar tareas nuevas
-   * Ver todas las tareas que tengas pendientes
-   * Marcar tareas como completadas
-   * Eliminar tareas
+## Descripción
+Aplicación de línea de comandos desarrollada en Python para la gestión de tareas con distintos niveles de prioridad (baja, media y alta).
+Permite organizar actividades, registrar su estado y mantener un historial de acciones realizadas.
 
+---
 
-Las tareas se van a guardar en el archivo llamado "tareas.json".
-Además, los cambios que hagas se van a guardar en el archivo llamado "registro.log".
+## Problema
+La gestión de tareas sin una estructura clara puede generar desorganización y dificultad para priorizar actividades importantes.
 
+---
 
+## Solución
+Esta aplicación permite registrar tareas con distintos niveles de prioridad, facilitando su organización y seguimiento, además de mantener un registro de cambios realizados.
 
-¿Cómo instalarlo?
+---
 
- * Paso 1: Crear un entorno virtual.
-    ¿Cómo se hace?
-    En la terminal tenés que poner este código:
-      python -m venv venv
+## Funcionalidades principales
+- Registro de tareas con nivel de prioridad  
+- Visualización de tareas  
+- Gestión de estado de tareas (pendiente/completada)  
+- Eliminación de tareas  
+- Almacenamiento persistente en formato JSON  
+- Registro de acciones mediante logging  
 
+---
 
+## Diseño técnico
+- Estructura modular del código  
+- Uso de JSON como almacenamiento de datos  
+- Implementación de logging para trazabilidad  
+- Manejo de estado de tareas (pendiente/completada)  
+- Validación de datos de entrada (prioridad)  
 
- * Paso 2: Activar el entorno virtual.
-    ¿Cómo se hace?
-    En la terminal tenés que poner este código:
+---
 
-    En caso de tener Windows/PowerShell:
-      venv\Scripts\activate
+## Enfoque en datos
+El sistema trabaja con datos estructurados que incluyen prioridad y estado de tareas, lo que permite su posible uso en análisis como:
+- Distribución de tareas por prioridad  
+- Seguimiento de tareas completadas  
+- Análisis de productividad  
 
-    En caso de tener Linux/MacOS:
-      source venv/bin/activate
+---
 
+## Tecnologías utilizadas
+- Python  
 
+---
 
- * Paso 3: Instalar las dependencias necesarias.
-    ¿Cómo se hace?
-    En la terminal tenés que poner este código:
-      pip install -r requirements.txt
-
-
-Y listo, con eso ya lo tendrías. Espero que te sirva!
+## Ejecución
+```bash
+pip install -r requirements.txt
+python main.py
